@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album Gallery</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+
+    .gallery {
+      width: 100%;
+      height: 500px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background: #000;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 12px;
+      box-sizing: border-box;
+    }
+
+    .gallery a {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery a:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .gallery::-webkit-scrollbar-track {
+      background: #000;
+    }
+
+    .gallery::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 10px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="gallery">
+
+  <!-- 1 — Slayyyter -->
+  <a href="https://shop.slayyyter.com/products/worst-girl-in-america-clear-vinyl" target="_blank" rel="noopener">
+    <img src="https://shop.slayyyter.com/cdn/shop/files/S-WGIA-Vinyl-PS-coke.png?v=1768247943&width=2200" alt="Slayyyter">
+  </a>
+
+  <!-- 2 — Rosalía -->
+  <a href="https://shopus.rosalia.com/products/lux-vinyl" target="_blank" rel="noopener">
+    <img src="https://shopus.rosalia.com/cdn/shop/files/LUX-LP-1_25ba7ede-310c-4614-b50c-889c35df7853.png?v=1761019647&width=3840" alt="Rosalía">
+  </a>
+
+  <!-- 3 — Dead Air -->
+  <a href="https://deadair.store/" target="_blank" rel="noopener">
+    <img src="https://deadair.store/cdn/shop/files/USvinylmock1.png?v=1737054985" alt="Dead Air">
+  </a>
+
+  <!-- 4 — Audrey Hobert -->
+  <a href="https://shop.audreyhobert.net/" target="_blank" rel="noopener">
+    <img src="https://shop.audreyhobert.net/cdn/shop/files/AudreyHobert_WhostheClown_FrontViewSleeve_1YA.png?v=1786053349&width=3840" alt="Audrey Hobert">
+  </a>
+
+  <!-- 5 — Taylor Swift -->
+  <a href="https://store.taylorswift.com/" target="_blank" rel="noopener">
+    <img src="https://store.taylorswift.com/cdn/shop/files/h073tUhjwDn4Oy9Xr7u5k4LvjIrkiFw7.png?v=1749665010&width=550" alt="Taylor Swift">
+  </a>
+
+  <!-- 6 — Amazon -->
+  <a href="https://www.amazon.com/" target="_blank" rel="noopener">
+    <img src="https://m.media-amazon.com/images/I/716OsyxeKZL._SL1500_.jpg" alt="Amazon product">
+  </a>
+
+  <!-- 7 — Madonna / Ray of Light -->
+  <a href="https://imusic.co/" target="_blank" rel="noopener">
+    <img src="https://imusic.b-cdn.net/images/item/original/329/0081227932329.jpg?madonna-2026-ray-of-light-lp&class=original&v=1784273518" alt="Madonna - Ray of Light">
+  </a>
+
+  <!-- 8 — Charli xcx -->
+  <a href="https://www.recordpusher.com/" target="_blank" rel="noopener">
+    <img src="https://www.recordpusher.com/cdn/shop/files/Charli_xcx_BRAT.png?v=1771313594&width=550" alt="Charli xcx">
+  </a>
+
+  <!-- 9 — Ariana Grande -->
+  <a href="https://shop.arianagrande.com/" target="_blank" rel="noopener">
+    <img src="https://shop.arianagrande.com/cdn/shop/files/M723482r32523r3_23rr5235_1.png?v=1777387302&width=800" alt="Ariana Grande">
+  </a>
+
+  <!-- 10 — Zara Larsson -->
+  <a href="https://zaralarssonuk.store/" target="_blank" rel="noopener">
+    <img src="https://zaralarssonuk.store/cdn/shop/files/Midnight_Sun_Girls_Trip_2LP.png?v=1776727532&width=3840" alt="Zara Larsson">
+  </a>
+
+  <!-- 11 — Charli xcx -->
+  <a href="https://store.charlixcx.com/" target="_blank" rel="noopener">
+    <img src="https://store.charlixcx.com/cdn/shop/files/02-D2C-Comp-2_b5b73246-d922-43e9-b296-2f6c9b0b98f8.png?v=1780283719&width=3840" alt="Charli xcx">
+  </a>
+
+  <!-- 12 — Taylor Swift -->
+  <a href="https://store.taylorswift.com/" target="_blank" rel="noopener">
+    <img src="https://store.taylorswift.com/cdn/shop/files/1_HeroFrontWithDisc.png?v=1755125616&width=2200" alt="Taylor Swift">
+  </a>
+
+</div>
+
+</body>
+</html>
